@@ -1,9 +1,3 @@
-// exports each layer as individual svgs, and then converts them to pngs, and finally removes the temporary svg
-// example run:
-//  node exportLayer.js "../../Google Drive/Team Fighting Hex Game/ActionCards.svg" "../../Google Drive/Team Fighting Hex Game/"
-//  first param is the svg file, second param is the output folder location
-//  must have inkscape on path
-
 const fs = require('fs');
 const child_process = require('child_process');
 
