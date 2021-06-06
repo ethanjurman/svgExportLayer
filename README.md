@@ -14,7 +14,7 @@ node exportLayer.js "./inkscape-examplesvg.svg" "./"
 - first param is the svg file, second param is the output folder location
 - must have inkscape on path to work
 
-Make sure to have each individual layer folder to be hidden and make sure to **lock and have visible** any layers that you want to show on sub folders
+Make sure to have each individual layer folder to be hidden and make sure to **lock and have visible** any layers that you want to show on sub folders. (The folders themselves should be marked not-shown, so you won't see any of these locked layers **_except_** the top level one.)
 
 
 ![image](https://user-images.githubusercontent.com/1131494/120931808-3c71a280-c6c1-11eb-812b-0eeb0edb3af6.png)
