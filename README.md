@@ -35,3 +35,9 @@ A 1 | A 2 | B 1 | B 2
 
 and they should be in folders like so 
 ![image](https://user-images.githubusercontent.com/1131494/120931926-aee28280-c6c1-11eb-80b0-f5443dc81174.png)
+
+
+Afterwards, if you need to say _tile these images for Tabletop sim_ ... just install imagemagick to path and do:
+```
+magick montage */*.png -geometry +0+0 -background none -tile 10x7 out.png
+```
