@@ -1,5 +1,5 @@
-const fs = require('fs');
-const child_process = require('child_process');
+import fs from 'fs';
+import child_process from 'child_process';
 
 const fileName = process.argv[2];
 const outputFolder = process.argv[3] || './';
@@ -8,6 +8,7 @@ const getStyleLineOffset = ({ layerName, lineIndex, lines }) => {
   if (!lineIndex) {
     lineIndex = lines.findIndex((line) => line.match(layerName));
   }
+  // sometimes the style line is before, but likely after the label line
   for (let styleLineIndex = -3; styleLineIndex < 5; styleLineIndex++) {
     if (lines[lineIndex + styleLineIndex].match('style="display')) {
       return { finalLineIndex: lineIndex, lineOffset: styleLineIndex };

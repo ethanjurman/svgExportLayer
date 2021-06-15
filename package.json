@@ -1,0 +1,23 @@
+{
+  "name": "svgexportlayer",
+  "version": "1.0.0",
+  "description": "Export SVG layers into multiple PNGs",
+  "main": "exportLayer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanjurman/svgExportLayer.git"
+  },
+  "author": "Ethan Jurman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanjurman/svgExportLayer/issues"
+  },
+  "homepage": "https://github.com/ethanjurman/svgExportLayer#readme",
+  "dependencies": {
+    "xml2json": "^0.12.0"
+  },
+  "type": "module"
+}
